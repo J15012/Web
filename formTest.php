@@ -53,7 +53,7 @@
           </div>
 
           <div class="element_wrap">
-            <label>来客者名</label>
+            <label>訪問者名</label>
             <p><?php echo $_POST['name'].' 様'; ?></p>
           </div>
 
@@ -153,7 +153,7 @@
               </div>
 
               <div class="element_wrap">
-                <label>来客者名 <font color="red">*</font></label>
+                <label>訪問者名 <font color="red">*</font></label>
                 <input type="text"pattern="[\u3041-\u3096]*" name="name" value=""placeholder="ひらがな入力" required >
               </div>
 
