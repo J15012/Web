@@ -69,7 +69,7 @@
                       <!-- レコード件数：<?php echo $row_count; ?> -->
 
                       <table border='1'>
-                      <tr><td>日付</td><td>時間</td><td>来客者名</td><td>メモ</td></tr>
+                      <tr><td>日付</td><td>時間</td><td>訪問者名</td><td>メモ</td></tr>
 
                       <?php
 
