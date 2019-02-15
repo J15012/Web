@@ -64,7 +64,7 @@
                 <fieldset>
                   <div align="center">
                     <!-- <div align="right"> -->
-                      <input type="submit" name="button_save" value="新規" onClick="location.href='formTest.php'"></br></br>
+                      <input type="submit" name="button_save" value="新規" onClick="location.href='shinkipg.php'"></br></br>
                     <form method="post" action="">
                       <!-- レコード件数：<?php echo $row_count; ?> -->
 
