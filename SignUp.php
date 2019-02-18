@@ -39,7 +39,7 @@ if (isset($_POST["signUp"])) {
         try {
             $pdo = new PDO($dsn, $db['user'], $db['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 
-            $stmt = $pdo->prepare("INSERT INTO users(teacher,username,  password) VALUES (?,?, ?)");
+            $stmt = $pdo->prepare("INSERT INTO users(teacher_mail,username,  password) VALUES (?,?, ?)");
 
 
 
