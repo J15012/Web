@@ -36,7 +36,7 @@ if (isset($_POST["login"])) {
         try {
             $pdo = new PDO($dsn, $db['user'], $db['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 
-            $stmt = $pdo->prepare('SELECT * FROM users WHERE teacher = ?');
+            $stmt = $pdo->prepare('SELECT * FROM users WHERE teacher_mail = ?');
            $stmt->execute(array($userid));
 
            // $stmt->execute(array($teacher));
@@ -52,9 +52,9 @@ if (isset($_POST["login"])) {
                     $sql = "SELECT * FROM users WHERE id = $id";  //入力したIDからユーザ名を取得
                     $stmt = $pdo->query($sql);
                     foreach ($stmt as $row) {
-                        $row['teacher'];  // ユーザ名
+                        $row['teacher_mail'];  // ユーザ名
                     }
-                    $_SESSION["TEACHER"] = $row['teacher'];
+                    $_SESSION["TEACHER_MAIL"] = $row['teacher_mail'];
                     header("Location: yoyaku_edit.php");  // メイン画面へ遷移
                     exit();  // 処理終了
                 } else {
