@@ -1,13 +1,13 @@
-  <?php
+    <?php
   session_start();
 
   //ログイン状態のチェック
-  if(!isset($_SESSION["TEACHER"])){
+  if(!isset($_SESSION["TEACHER_MAIL"])){
     header("Location:login.php");
     exit;
   }
 
-  echo "ユーザID：".$_SESSION["TEACHER"];
+  echo "ユーザID：".$_SESSION["TEACHER_MAIL"];
   ?>
 
             <?php
@@ -74,7 +74,7 @@
                       <?php
 
                       foreach($rows as $row){
-                        if( $_SESSION["TEACHER"] == $row['teacher']){
+                        if( $_SESSION["TEACHER_MAIL"] == $row['teacher_mail']){
                       ?>
                       <tr>
 
